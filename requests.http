@@ -1,0 +1,17 @@
+# примеры API-запросов
+
+
+# создание объявления
+POST http://127.0.0.1:5000/advertisements/
+Content-Type: application/json
+
+{
+  "title": "Продам дом",
+  "description": "Большой, красивый"
+}
+
+###
+
+# получение объявления
+GET http://127.0.0.1:5000/advertisements/1
+Content-Type: application/json

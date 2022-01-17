@@ -7,11 +7,29 @@ Content-Type: application/json
 
 {
   "title": "Продам дом",
-  "description": "Большой, красивый"
+  "description": "Большой, красивый",
+  "user_id": 1
 }
 
 ###
 
 # получение объявления
 GET http://127.0.0.1:5000/advertisements/1
+Content-Type: application/json
+
+###
+
+# обновление объявления
+PATCH http://127.0.0.1:5000/advertisements/1
+Content-Type: application/json
+
+{
+  "title": "Продам гараж",
+  "description": "Большой, красивый"
+}
+
+###
+
+# удаление объявления
+DELETE http://127.0.0.1:5000/advertisements/1
 Content-Type: application/json

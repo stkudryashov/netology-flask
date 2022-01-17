@@ -8,6 +8,9 @@ ADVERTISEMENT_CREATE = {
         "description": {
             "type": "string"
         },
+        "user_id": {
+            "type": "integer"
+        },
     },
-    "required": ["title", "description"]
+    "required": ["title", "description", "user_id"]
 }
